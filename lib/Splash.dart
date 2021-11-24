@@ -18,7 +18,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds:1), (){
+    Timer(Duration(seconds:3), (){
       Navigator.push(context, AnimationScreen(widget: First_Screen()));
       
     });

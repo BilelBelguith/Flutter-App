@@ -6,7 +6,7 @@ String? emailInputValidator(value) {
   if (value.isEmpty ||
       !RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+.[a-zA-Z]+")
           .hasMatch(value)) {
-    return "mail est invalide";
+    return "Mail is invalid";
   }
   return null;
 }
@@ -162,11 +162,13 @@ class _First_ScreenState extends State<First_Screen> {
                     child: Divider(
                   color: Colors.green,
                 )),
-                Text(
-                  "- - - - - - - - - - - - - - - - - -  OR  - - - - - - - - - - - - - - - - - -",
+                Center(
+                child :Text(
+                  "  OR ",
                   style: TextStyle(
                     color: Colors.green,
                   ),
+                ),
                 ),
                 Expanded(
                     child: Divider(
@@ -208,29 +210,7 @@ class _First_ScreenState extends State<First_Screen> {
                   ),
                 ),
               ),
-              InkWell(
-                onTap: () {},
-                child: Text(
-                  "Vous avez oublié votre mot de passe ?",
-                  style: TextStyle(
-                    color: Colors.green,
-                    decoration: TextDecoration.underline,
-                  ),
-                ),
-              ),
-              InkWell(
-                onTap: () {},
-                child: Text(
-                  "Contact Support",
-                  style: TextStyle(
-                    color: Colors.green,
-                    decoration: TextDecoration.underline,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 50,
-              ),
+              SizedBox(height: 60,),
               Text(
                 "Powered by DIMAXON | Copyright 1996-2022 ",
                 style: TextStyle(
